@@ -1,0 +1,12 @@
+#ifndef QTSQLLIB_GLOBAL_H
+#define QTSQLLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QTSQLLIB_LIBRARY)
+#  define QTSQLLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QTSQLLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QTSQLLIB_GLOBAL_H
